@@ -1,0 +1,102 @@
+body {
+  -webkit-app-region: drag;
+}
+
+span * {
+  -webkit-app-region: no-drag;
+}
+
+main > div > div > div > div > h1[role="heading"],
+main > div > div > div > div > div > h1[role="heading"] {
+  background: #333;
+  color: #666;
+  font-size: 13px;
+  margin: -10px;
+  text-align: center;
+  height: 35px;
+  line-height: 30px;
+}
+
+[aria-label="Primary"][role="navigation"] {
+  position: fixed !important;
+  top: -50px !important;
+}
+
+header [aria-label^="Account"],
+header [aria-label^="Direct Messages"],
+header [aria-label^="Notifications timeline"] {
+  position: relative;
+  top: 52px;
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #333;
+  position: fixed;
+  font-size: 12px;
+  height: 50px;
+}
+
+.backLink {
+  height: 40px !important;
+  width: 40px !important;
+  margin: 5px !important;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 10px;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.backLink:hover span.left{
+  color: white;
+}
+
+.backLink:hover span.left:after{
+}
+
+.backLink span.left {
+  display: inline-block;
+  color: white;
+  width: 1px;
+  height: 1px;
+}
+
+.backLink span.left:after {
+  content: '';
+	display: inline-block;
+  margin-top: 14px;
+  margin-left: 16px;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-color: white;
+  transform: rotate(-135deg);
+}
+
+main > div > div > div,
+main > div > div > div > div {
+  border: none !important;
+}
+
+[aria-label^="Account"] img {
+  border-radius: 99em !important;
+}
+
+[aria-label^="Compose a Direct Message"],
+[aria-label^="Compose a Tweet"] {
+  position: fixed;
+  right: 60px;
+  top: 14px;
+  z-index: 100;
+  color: white !important;
+}
+

@@ -1,0 +1,11 @@
+{
+  "name": "Twitter",
+  "version": "1.0.0",
+  "description": "Super minimal twitter mobile",
+  "main": "index.js",
+  "author": "Paolo Fragomeni",
+  "license": "MIT",
+  "scripts": {
+    "build:macos": "electron-packager . --version=1.4.6 --overwrite --asar --out=dist --ignore='^media$' --prune --platform=darwin --arch=x64 --icon=static/Icon.icns --app-bundle-id=com.0x00a.twitter --sign='Developer ID Application: Paolo Fragomeni (3CPSKTF8W5)' --app-version=$npm_package_version && cd dist/Twitter-darwin-x64 && zip -ryXq9 ../Twitter-osx-${npm_package_version}.zip Twitter.app"
+  }
+}
