@@ -22,6 +22,10 @@ main > div > div > div > div > div > h1[role="heading"] {
   top: -50px !important;
 }
 
+main [role="row"] article {
+  padding-right: 25px;
+}
+
 header [aria-label^="Account"],
 header [aria-label^="Direct Messages"],
 header [aria-label^="Notifications timeline"] {
@@ -29,6 +33,10 @@ header [aria-label^="Notifications timeline"] {
   top: 52px;
   box-shadow: none !important;
   color: white !important;
+}
+
+header [aria-label^="Notifications timeline"] {
+  left: -5px;
 }
 
 .header {
@@ -94,7 +102,7 @@ main > div > div > div > div {
 [aria-label^="Compose a Direct Message"],
 [aria-label^="Compose a Tweet"] {
   position: fixed;
-  right: 60px;
+  right: 95px;
   top: 14px;
   z-index: 100;
   color: white !important;
